@@ -78,20 +78,106 @@
             <dt>Milk</dt>
                <dd>- Mild drink</dd>
           </dl>
-
+        <br>
         <!-- Table -->
-         <table>
+         <table border="1">
+          <caption>Table example</caption>
+          <tr>
+            <th>row 1</th> <!--Row heading-->
+             <td>data 2</td>
+              <td>data 3</td>
+          </tr>
             <tr> <!--Row-->
-                 <td> </td>  <!--Row desc-->
-                 <td> </td> 
+              <th>row 2</th>
+                 <td>
+                  <img src="weave bts.jpg" width="100" alt="">
+                </td>  <!--col num 1-->
+                 <td colspan="2"> <!-- combine 2 cols -->
+                  <a href="https://google.com">Google</a>
+                </td> 
+            </tr>                
+            <tr> <!--row num 1-->
+              <th rowspan="4">row 3</th>  <!-- combine 2 rows -->
+                 <td>data 3 </td>  <!--col num 2-->
+                 <td>data 4 </td> 
+            </tr>
+            <tr>
+              <!--<th>row 4</th> -->
+                 <td>data 5 </td>  <!--Row num 3-->
+                 <td>data 6 </td> 
+            </tr>
+         </table>
+        <br>
+         <table border="1">
+          <thead style="color: blueviolet;">         
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
             </tr> 
-               
-            <tr></tr>
-            <tr></tr>
+          </thead>
+          <tbody style="color: palevioletred;"> 
+          <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+          </tr>
+          <tr>
+            <td>data 4</td>
+            <td>data 5</td>
+            <td>data 6</td>
+          </tr>
+        </tbody>
+        <tfoot style="color: blueviolet;">         
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr> 
+        </tfoot>
          </table>
 
+         <!-- Nested Table -->
+        <br>
+         <table border="1">
+          <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>data</td>
+            <td>
+              <table border="2">
+                <tr>
+                  <td>data 1</td>
+                  <td>data 2</td>
+                </tr>
+                <tr>
+                  <td>data 3</td>
+                  <td>data 4</td>
+                </tr>
+              </table>
+            </td>
+            <td>data 6</td>
+          </tr>          
+         </table>
+        <br>
+         <!-- **DIV** for sturcture of a website (block ele)-->
+          <!-- start from new line-->
+          <div style="border: 1px solid red;">random txt</div>
+          <div>random txt</div>
 
-        
+          <br>
+         <!-- **Span** (Inline ele) -->
+          <!--wont start from new line, takes space acc to content-->
+          <span style="border: 1px solid brown;">random text</span>
+          <span>random text</span>
+          <br>
+          <br>
+          <!-- Iframe (web within a web) -->
+           <iframe src="https://www.youtube.com/" height="400" width="700"> </iframe>
+
 
     </body>     
 </html>
